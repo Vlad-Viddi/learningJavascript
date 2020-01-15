@@ -40,11 +40,11 @@ var showAnswerAndGoodluck = function(answerArray) {
 
 
 
-var words = ["javascript", "monkey", "amazing", "pancake", "holiday", "america", "library", "plant", "motherland", "hospital", "maternity", "independence", "africa", "village", "teacher", "velocity", "ukraine"]; 
-var word = pickWord(words);
-var answerArray = setupAnswerArray(word);
-var remainingLetters = word.length;
-var guesses = 10;
+var words = ["javascript", "monkey", "amazing", "pancake", "holiday", "america", "library", "plant", "motherland", "hospital", "maternity", "independence", "africa", "village", "teacher", "velocity", "ukraine"],
+  word = pickWord(words),
+  answerArray = setupAnswerArray(word),
+  remainingLetters = word.length,
+  guesses = 10;
 
 while (remainingLetters > 0 && guesses > 0) {
 	showPlayerProgress(answerArray);
